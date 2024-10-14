@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer's Haven - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <h1>Writer's Haven</h1>
+        <h2>Login</h2>
+        <form class="login-form" action="login.php" method="post">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required autocomplete="email">
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="pw" required autocomplete="current-password">
+            <button type="submit" name="login">Log in</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
