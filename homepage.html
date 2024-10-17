@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer's Haven</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Writer's Haven</div>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Latest from Writer's Haven</h1>
+    <button class="post-button" onclick="openPopup()">New Post</button> 
+
+    <div class="blog-container">
+        <div class="blog-post">
+            <h2>The Art of Storytelling</h2>
+            <p>Explore the timeless techniques of crafting captivating narratives that leave a lasting impression.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h2>Mastering the Writer's Mindset</h2>
+            <p>Unlock the secrets to cultivating a productive and inspiring writing routine.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h2>The Power of Editing</h2>
+            <p>Discover the transformative power of editing and refining your written work.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</main>
+
+<div class="popup-container hidden" id="popup">
+    <div class="popup-box animate-popup">
+        <h2>New Post</h2>
+        <input type="text" placeholder="Enter Heading" id="post-heading">
+        <textarea placeholder="Enter Body" id="post-body"></textarea>
+        <div class="buttons">
+            <button class="post-button">Post</button>
+            <button class="close-button" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Writer's Haven. All rights reserved.</p>
+</footer>
+
+<script src="homepage.js"></script>
+</body>
+</html>
